@@ -1,0 +1,699 @@
+Jun 08 16:13:29 mayoub kernel: Linux version 7.0.0 (mayoub@mayoub) (gcc (GCC) 15.1.0, GNU ld (GNU Binutils) 2.44) #1 SMP PREEMPT_DYNAMIC Mon Jun  8 15:06:12 UTC 2026
+Jun 08 16:13:29 mayoub kernel: Command line: BOOT_IMAGE=/vmlinuz-7.0-nimpo root=/dev/sda3 ro
+Jun 08 16:13:29 mayoub kernel: BIOS-provided physical RAM map:
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [gap 0x00000000000a0000-0x00000000000fffff]
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000007fffff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000000800000-0x0000000000807fff]  ACPI NVS
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000000808000-0x000000000080afff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x000000000080b000-0x000000000080bfff]  ACPI NVS
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x000000000080c000-0x000000000080ffff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000000810000-0x00000000008fffff]  ACPI NVS
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000000900000-0x00000000be93efff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000be93f000-0x00000000be9fffff]  device reserved
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bea00000-0x00000000bf6eefff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bf6ef000-0x00000000bf96efff]  device reserved
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bf96f000-0x00000000bf97efff]  ACPI data
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bf97f000-0x00000000bf9fefff]  ACPI NVS
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bf9ff000-0x00000000bfe5ffff]  System RAM
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bfe60000-0x00000000bfe7ffff]  device reserved
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000bfe80000-0x00000000bfffffff]  ACPI NVS
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [gap 0x00000000c0000000-0x00000000ffdfffff]
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x00000000ffe00000-0x00000000ffffffff]  device reserved
+Jun 08 16:13:29 mayoub kernel: BIOS-e820: [mem 0x0000000100000000-0x000000073fffffff]  System RAM
+Jun 08 16:13:29 mayoub kernel: NX (Execute Disable) protection: active
+Jun 08 16:13:29 mayoub kernel: APIC: Static calls initialized
+Jun 08 16:13:29 mayoub kernel: efi: EFI v2.7 by EDK II
+Jun 08 16:13:29 mayoub kernel: efi: SMBIOS=0xbf71a000 ACPI=0xbf97e000 ACPI 2.0=0xbf97e014 MEMATTR=0xbe74a018 
+Jun 08 16:13:29 mayoub kernel: efi: Remove mem137: MMIO range=[0xffe00000-0xffffffff] (2MB) from e820 map
+Jun 08 16:13:29 mayoub kernel: e820: remove [mem 0xffe00000-0xffffffff] device reserved
+Jun 08 16:13:29 mayoub kernel: SMBIOS 2.8 present.
+Jun 08 16:13:29 mayoub kernel: DMI: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 0.0.0 02/06/2015
+Jun 08 16:13:29 mayoub kernel: DMI: Memory slots populated: 2/2
+Jun 08 16:13:29 mayoub kernel: Hypervisor detected: KVM
+Jun 08 16:13:29 mayoub kernel: last_pfn = 0xbfe60 max_arch_pfn = 0x400000000
+Jun 08 16:13:29 mayoub kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Jun 08 16:13:29 mayoub kernel: kvm-clock: using sched offset of 15388738190 cycles
+Jun 08 16:13:29 mayoub kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Jun 08 16:13:29 mayoub kernel: tsc: Detected 2112.000 MHz processor
+Jun 08 16:13:29 mayoub kernel: e820: update [mem 0x00000000-0x00000fff] System RAM ==> device reserved
+Jun 08 16:13:29 mayoub kernel: e820: remove [mem 0x000a0000-0x000fffff] System RAM
+Jun 08 16:13:29 mayoub kernel: last_pfn = 0x740000 max_arch_pfn = 0x400000000
+Jun 08 16:13:29 mayoub kernel: MTRR map: 4 entries (2 fixed + 2 variable; max 18), built from 8 variable MTRRs
+Jun 08 16:13:29 mayoub kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Jun 08 16:13:29 mayoub kernel: last_pfn = 0xbfe60 max_arch_pfn = 0x400000000
+Jun 08 16:13:29 mayoub kernel: Using GB pages for direct mapping
+Jun 08 16:13:29 mayoub kernel: Secure boot disabled
+Jun 08 16:13:29 mayoub kernel: ACPI: Early table checksum verification disabled
+Jun 08 16:13:29 mayoub kernel: ACPI: RSDP 0x00000000BF97E014 000024 (v02 BOCHS )
+Jun 08 16:13:29 mayoub kernel: ACPI: XSDT 0x00000000BF97D0E8 00004C (v01 BOCHS  BXPC     00000001      01000013)
+Jun 08 16:13:29 mayoub kernel: ACPI: FACP 0x00000000BF979000 000074 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jun 08 16:13:29 mayoub kernel: ACPI: DSDT 0x00000000BF97A000 0021E8 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jun 08 16:13:29 mayoub kernel: ACPI: FACS 0x00000000BF9DD000 000040
+Jun 08 16:13:29 mayoub kernel: ACPI: APIC 0x00000000BF978000 000170 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jun 08 16:13:29 mayoub kernel: ACPI: HPET 0x00000000BF977000 000038 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jun 08 16:13:29 mayoub kernel: ACPI: WAET 0x00000000BF976000 000028 (v01 BOCHS  BXPC     00000001 BXPC 00000001)
+Jun 08 16:13:29 mayoub kernel: ACPI: BGRT 0x00000000BF975000 000038 (v01 INTEL  EDK2     00000002      01000013)
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving FACP table memory at [mem 0xbf979000-0xbf979073]
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving DSDT table memory at [mem 0xbf97a000-0xbf97c1e7]
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving FACS table memory at [mem 0xbf9dd000-0xbf9dd03f]
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving APIC table memory at [mem 0xbf978000-0xbf97816f]
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving HPET table memory at [mem 0xbf977000-0xbf977037]
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving WAET table memory at [mem 0xbf976000-0xbf976027]
+Jun 08 16:13:29 mayoub kernel: ACPI: Reserving BGRT table memory at [mem 0xbf975000-0xbf975037]
+Jun 08 16:13:29 mayoub kernel: No NUMA configuration found
+Jun 08 16:13:29 mayoub kernel: Faking a node at [mem 0x0000000000000000-0x000000073fffffff]
+Jun 08 16:13:29 mayoub kernel: NODE_DATA(0) allocated [mem 0x73fffc900-0x73fffffff]
+Jun 08 16:13:29 mayoub kernel: ACPI: PM-Timer IO Port: 0xb008
+Jun 08 16:13:29 mayoub kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+Jun 08 16:13:29 mayoub kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+Jun 08 16:13:29 mayoub kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Jun 08 16:13:29 mayoub kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+Jun 08 16:13:29 mayoub kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Jun 08 16:13:29 mayoub kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+Jun 08 16:13:29 mayoub kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+Jun 08 16:13:29 mayoub kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Jun 08 16:13:29 mayoub kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Jun 08 16:13:29 mayoub kernel: e820: update [mem 0xbdf88000-0xbdf90fff] System RAM ==> device reserved
+Jun 08 16:13:29 mayoub kernel: TSC deadline timer available
+Jun 08 16:13:29 mayoub kernel: CPU topo: Max. logical packages:   1
+Jun 08 16:13:29 mayoub kernel: CPU topo: Max. logical nodes:      1
+Jun 08 16:13:29 mayoub kernel: CPU topo: Num. nodes per package:  1
+Jun 08 16:13:29 mayoub kernel: CPU topo: Max. logical dies:       1
+Jun 08 16:13:29 mayoub kernel: CPU topo: Max. dies per package:   1
+Jun 08 16:13:29 mayoub kernel: CPU topo: Max. threads per core:   2
+Jun 08 16:13:29 mayoub kernel: CPU topo: Num. cores per package:    16
+Jun 08 16:13:29 mayoub kernel: CPU topo: Num. threads per package:  32
+Jun 08 16:13:29 mayoub kernel: CPU topo: Allowing 32 present CPUs plus 0 hotplug CPUs
+Jun 08 16:13:29 mayoub kernel: kvm-guest: APIC: eoi() replaced with kvm_guest_apic_eoi_write()
+Jun 08 16:13:29 mayoub kernel: kvm-guest: KVM setup pv remote TLB flush
+Jun 08 16:13:29 mayoub kernel: kvm-guest: setup PV sched yield
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0x00800000-0x00807fff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0x0080b000-0x0080bfff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0x00810000-0x008fffff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0xbdf88000-0xbdf90fff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0xbe93f000-0xbe9fffff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0xbf6ef000-0xbf9fefff]
+Jun 08 16:13:29 mayoub kernel: PM: hibernation: Registered nosave memory: [mem 0xbfe60000-0xffffffff]
+Jun 08 16:13:29 mayoub kernel: [gap 0xc0000000-0xffffffff] available for PCI devices
+Jun 08 16:13:29 mayoub kernel: Booting paravirtualized kernel on KVM
+Jun 08 16:13:29 mayoub kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Jun 08 16:13:29 mayoub kernel: Zone ranges:
+Jun 08 16:13:29 mayoub kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Jun 08 16:13:29 mayoub kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Jun 08 16:13:29 mayoub kernel:   Normal   [mem 0x0000000100000000-0x000000073fffffff]
+Jun 08 16:13:29 mayoub kernel: Movable zone start for each node
+Jun 08 16:13:29 mayoub kernel: Early memory node ranges
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x0000000000001000-0x000000000009ffff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x0000000000100000-0x00000000007fffff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x0000000000808000-0x000000000080afff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x000000000080c000-0x000000000080ffff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x0000000000900000-0x00000000be93efff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x00000000bea00000-0x00000000bf6eefff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x00000000bf9ff000-0x00000000bfe5ffff]
+Jun 08 16:13:29 mayoub kernel:   node   0: [mem 0x0000000100000000-0x000000073fffffff]
+Jun 08 16:13:29 mayoub kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000073fffffff]
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA: 8 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA: 240 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA32: 193 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone DMA32: 784 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: On node 0, zone Normal: 416 pages in unavailable ranges
+Jun 08 16:13:29 mayoub kernel: setup_percpu: NR_CPUS:64 nr_cpumask_bits:32 nr_cpu_ids:32 nr_node_ids:1
+Jun 08 16:13:29 mayoub kernel: percpu: Embedded 52 pages/cpu s175960 r8192 d28840 u262144
+Jun 08 16:13:29 mayoub kernel: pcpu-alloc: s175960 r8192 d28840 u262144 alloc=1*2097152
+Jun 08 16:13:29 mayoub kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+Jun 08 16:13:29 mayoub kernel: pcpu-alloc: [0] 16 17 18 19 20 21 22 23 [0] 24 25 26 27 28 29 30 31 
+Jun 08 16:13:29 mayoub kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-7.0-nimpo root=/dev/sda3 ro
+Jun 08 16:13:29 mayoub kernel: random: crng init done
+Jun 08 16:13:29 mayoub kernel: printk: log buffer data + meta data: 262144 + 917504 = 1179648 bytes
+Jun 08 16:13:29 mayoub kernel: Dentry cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: Inode-cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: software IO TLB: area num 32.
+Jun 08 16:13:29 mayoub kernel: Fallback order for Node 0: 0 
+Jun 08 16:13:29 mayoub kernel: Built 1 zonelists, mobility grouping on.  Total pages: 7338293
+Jun 08 16:13:29 mayoub kernel: Policy zone: Normal
+Jun 08 16:13:29 mayoub kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Jun 08 16:13:29 mayoub kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=32, Nodes=1
+Jun 08 16:13:29 mayoub kernel: Dynamic Preempt: lazy
+Jun 08 16:13:29 mayoub kernel: rcu: Preemptible hierarchical RCU implementation.
+Jun 08 16:13:29 mayoub kernel: rcu:         RCU event tracing is enabled.
+Jun 08 16:13:29 mayoub kernel: rcu:         RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=32.
+Jun 08 16:13:29 mayoub kernel:         Trampoline variant of Tasks RCU enabled.
+Jun 08 16:13:29 mayoub kernel:         Tracing variant of Tasks RCU enabled.
+Jun 08 16:13:29 mayoub kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Jun 08 16:13:29 mayoub kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=32
+Jun 08 16:13:29 mayoub kernel: RCU Tasks: Setting shift to 5 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=32.
+Jun 08 16:13:29 mayoub kernel: NR_IRQS: 4352, nr_irqs: 680, preallocated irqs: 16
+Jun 08 16:13:29 mayoub kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Jun 08 16:13:29 mayoub kernel: Console: colour dummy device 80x25
+Jun 08 16:13:29 mayoub kernel: printk: legacy console [tty0] enabled
+Jun 08 16:13:29 mayoub kernel: ACPI: Core revision 20251212
+Jun 08 16:13:29 mayoub kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+Jun 08 16:13:29 mayoub kernel: APIC: Switch to symmetric I/O mode setup
+Jun 08 16:13:29 mayoub kernel: x2apic enabled
+Jun 08 16:13:29 mayoub kernel: APIC: Switched APIC routing to: physical x2apic
+Jun 08 16:13:29 mayoub kernel: kvm-guest: APIC: send_IPI_mask() replaced with kvm_send_ipi_mask()
+Jun 08 16:13:29 mayoub kernel: kvm-guest: APIC: send_IPI_mask_allbutself() replaced with kvm_send_ipi_mask_allbutself()
+Jun 08 16:13:29 mayoub kernel: kvm-guest: setup PV IPIs
+Jun 08 16:13:29 mayoub kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Jun 08 16:13:29 mayoub kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x1e71785e5dd, max_idle_ns: 440795244814 ns
+Jun 08 16:13:29 mayoub kernel: Calibrating delay loop (skipped) preset value.. 4224.00 BogoMIPS (lpj=2112000)
+Jun 08 16:13:29 mayoub kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Jun 08 16:13:29 mayoub kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Jun 08 16:13:29 mayoub kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Jun 08 16:13:29 mayoub kernel: mitigations: Enabled attack vectors: user_kernel, user_user, SMT mitigations: auto
+Jun 08 16:13:29 mayoub kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl
+Jun 08 16:13:29 mayoub kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Jun 08 16:13:29 mayoub kernel: ITS: Mitigation: Aligned branch/return thunks
+Jun 08 16:13:29 mayoub kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Jun 08 16:13:29 mayoub kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+Jun 08 16:13:29 mayoub kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Jun 08 16:13:29 mayoub kernel: active return thunk: its_return_thunk
+Jun 08 16:13:29 mayoub kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Jun 08 16:13:29 mayoub kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Jun 08 16:13:29 mayoub kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Jun 08 16:13:29 mayoub kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Jun 08 16:13:29 mayoub kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Jun 08 16:13:29 mayoub kernel: x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+Jun 08 16:13:29 mayoub kernel: x86/fpu: Enabled xstate features 0x207, context size is 840 bytes, using 'compacted' format.
+Jun 08 16:13:29 mayoub kernel: Freeing SMP alternatives memory: 56K
+Jun 08 16:13:29 mayoub kernel: pid_max: default: 32768 minimum: 301
+Jun 08 16:13:29 mayoub kernel: SELinux:  Initializing.
+Jun 08 16:13:29 mayoub kernel: Mount-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: Mountpoint-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: VFS: Finished mounting rootfs on nullfs
+Jun 08 16:13:29 mayoub kernel: smpboot: CPU0: Intel(R) Core(TM) i7-14700 (family: 0x6, model: 0xb7, stepping: 0x1)
+Jun 08 16:13:29 mayoub kernel: Performance Events: unsupported CPU family 6 model 183 no PMU driver, software events only.
+Jun 08 16:13:29 mayoub kernel: signal: max sigframe size: 3632
+Jun 08 16:13:29 mayoub kernel: rcu: Hierarchical SRCU implementation.
+Jun 08 16:13:29 mayoub kernel: rcu:         Max phase no-delay instances is 400.
+Jun 08 16:13:29 mayoub kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Jun 08 16:13:29 mayoub kernel: smp: Bringing up secondary CPUs ...
+Jun 08 16:13:29 mayoub kernel: smpboot: x86: Booting SMP configuration:
+Jun 08 16:13:29 mayoub kernel: .... node  #0, CPUs:        #2  #4  #6  #8 #10 #12 #14 #16 #18 #20 #22 #24 #26 #28 #30  #1  #3  #5  #7  #9 #11 #13 #15 #17 #19 #21 #23 #25 #27 #29 #31
+Jun 08 16:13:29 mayoub kernel: smp: Brought up 1 node, 32 CPUs
+Jun 08 16:13:29 mayoub kernel: smpboot: Total of 32 processors activated (135168.00 BogoMIPS)
+Jun 08 16:13:29 mayoub kernel: Memory: 28674932K/29353172K available (19606K kernel code, 3018K rwdata, 7804K rodata, 2888K init, 608K bss, 663236K reserved, 0K cma-reserved)
+Jun 08 16:13:29 mayoub kernel: devtmpfs: initialized
+Jun 08 16:13:29 mayoub kernel: ACPI: PM: Registering ACPI NVS region [mem 0x00800000-0x00807fff] (32768 bytes)
+Jun 08 16:13:29 mayoub kernel: ACPI: PM: Registering ACPI NVS region [mem 0x0080b000-0x0080bfff] (4096 bytes)
+Jun 08 16:13:29 mayoub kernel: ACPI: PM: Registering ACPI NVS region [mem 0x00810000-0x008fffff] (983040 bytes)
+Jun 08 16:13:29 mayoub kernel: ACPI: PM: Registering ACPI NVS region [mem 0xbf97f000-0xbf9fefff] (524288 bytes)
+Jun 08 16:13:29 mayoub kernel: ACPI: PM: Registering ACPI NVS region [mem 0xbfe80000-0xbfffffff] (1572864 bytes)
+Jun 08 16:13:29 mayoub kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Jun 08 16:13:29 mayoub kernel: posixtimers hash table entries: 16384 (order: 6, 262144 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: futex hash table entries: 8192 (524288 bytes on 1 NUMA nodes, total 512 KiB, linear).
+Jun 08 16:13:29 mayoub kernel: PM: RTC time: 16:13:28, date: 2026-06-08
+Jun 08 16:13:29 mayoub kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Jun 08 16:13:29 mayoub kernel: audit: initializing netlink subsys (disabled)
+Jun 08 16:13:29 mayoub kernel: audit: type=2000 audit(1780935208.918:1): state=initialized audit_enabled=0 res=1
+Jun 08 16:13:29 mayoub kernel: thermal_sys: Registered thermal governor 'step_wise'
+Jun 08 16:13:29 mayoub kernel: cpuidle: using governor menu
+Jun 08 16:13:29 mayoub kernel: efi: Freeing EFI boot services memory: 40044K
+Jun 08 16:13:29 mayoub kernel: PCI: Using configuration type 1 for base access
+Jun 08 16:13:29 mayoub kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Jun 08 16:13:29 mayoub kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Jun 08 16:13:29 mayoub kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Jun 08 16:13:29 mayoub kernel: ACPI: Added _OSI(Module Device)
+Jun 08 16:13:29 mayoub kernel: ACPI: Added _OSI(Processor Device)
+Jun 08 16:13:29 mayoub kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Jun 08 16:13:29 mayoub kernel: ACPI: 1 ACPI AML tables successfully acquired and loaded
+Jun 08 16:13:29 mayoub kernel: ACPI: \_SB_: platform _OSC: OS support mask [002a7eee]
+Jun 08 16:13:29 mayoub kernel: ACPI: Interpreter enabled
+Jun 08 16:13:29 mayoub kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Jun 08 16:13:29 mayoub kernel: ACPI: Using IOAPIC for interrupt routing
+Jun 08 16:13:29 mayoub kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Jun 08 16:13:29 mayoub kernel: PCI: Using E820 reservations for host bridge windows
+Jun 08 16:13:29 mayoub kernel: ACPI: Enabled 2 GPEs in block 00 to 0F
+Jun 08 16:13:29 mayoub kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Jun 08 16:13:29 mayoub kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+Jun 08 16:13:29 mayoub kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Jun 08 16:13:29 mayoub kernel: acpi PNP0A03:00: _OSC: platform retains control of PCIe features (AE_ERROR)
+Jun 08 16:13:29 mayoub kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jun 08 16:13:29 mayoub kernel: PCI host bridge to bus 0000:00
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: root bus resource [mem 0xc0000000-0xfebfffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: root bus resource [mem 0x800000000-0x87fffffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.1: [8086:7010] type 00 class 0x010180 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.1: BAR 4 [io  0xc060-0xc06f]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.3: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: [1af4:1050] type 00 class 0x030000 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: BAR 0 [mem 0xc0000000-0xc07fffff pref]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: BAR 2 [mem 0x800000000-0x800003fff 64bit pref]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: BAR 4 [mem 0xc0881000-0xc0881fff]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: ROM [mem 0xffff0000-0xffffffff pref]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: [1af4:1000] type 00 class 0x020000 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: BAR 0 [io  0xc040-0xc05f]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: BAR 1 [mem 0xc0880000-0xc0880fff]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: BAR 4 [mem 0x800004000-0x800007fff 64bit pref]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: ROM [mem 0xfff80000-0xffffffff pref]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:04.0: [1af4:1002] type 00 class 0x00ff00 conventional PCI endpoint
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:04.0: BAR 0 [io  0xc000-0xc03f]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:04.0: BAR 4 [mem 0x800008000-0x80000bfff 64bit pref]
+Jun 08 16:13:29 mayoub kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 10
+Jun 08 16:13:29 mayoub kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Jun 08 16:13:29 mayoub kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 11
+Jun 08 16:13:29 mayoub kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Jun 08 16:13:29 mayoub kernel: ACPI: PCI: Interrupt link LNKS configured for IRQ 9
+Jun 08 16:13:29 mayoub kernel: iommu: Default domain type: Translated
+Jun 08 16:13:29 mayoub kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Jun 08 16:13:29 mayoub kernel: SCSI subsystem initialized
+Jun 08 16:13:29 mayoub kernel: libata version 3.00 loaded.
+Jun 08 16:13:29 mayoub kernel: ACPI: bus type USB registered
+Jun 08 16:13:29 mayoub kernel: usbcore: registered new interface driver usbfs
+Jun 08 16:13:29 mayoub kernel: usbcore: registered new interface driver hub
+Jun 08 16:13:29 mayoub kernel: usbcore: registered new device driver usb
+Jun 08 16:13:29 mayoub kernel: pps_core: LinuxPPS API ver. 1 registered
+Jun 08 16:13:29 mayoub kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Jun 08 16:13:29 mayoub kernel: PTP clock support registered
+Jun 08 16:13:29 mayoub kernel: efivars: Registered efivars operations
+Jun 08 16:13:29 mayoub kernel: Advanced Linux Sound Architecture Driver Initialized.
+Jun 08 16:13:29 mayoub kernel: NetLabel: Initializing
+Jun 08 16:13:29 mayoub kernel: NetLabel:  domain hash size = 128
+Jun 08 16:13:29 mayoub kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Jun 08 16:13:29 mayoub kernel: NetLabel:  unlabeled traffic allowed by default
+Jun 08 16:13:29 mayoub kernel: PCI: Using ACPI for IRQ routing
+Jun 08 16:13:29 mayoub kernel: PCI: pci_cache_line_size set to 64 bytes
+Jun 08 16:13:29 mayoub kernel: e820: register RAM buffer resource [mem 0x0080b000-0x008fffff]
+Jun 08 16:13:29 mayoub kernel: e820: register RAM buffer resource [mem 0x00810000-0x008fffff]
+Jun 08 16:13:29 mayoub kernel: e820: register RAM buffer resource [mem 0xbdf88000-0xbfffffff]
+Jun 08 16:13:29 mayoub kernel: e820: register RAM buffer resource [mem 0xbe93f000-0xbfffffff]
+Jun 08 16:13:29 mayoub kernel: e820: register RAM buffer resource [mem 0xbf6ef000-0xbfffffff]
+Jun 08 16:13:29 mayoub kernel: e820: register RAM buffer resource [mem 0xbfe60000-0xbfffffff]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Jun 08 16:13:29 mayoub kernel: vgaarb: loaded
+Jun 08 16:13:29 mayoub kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+Jun 08 16:13:29 mayoub kernel: hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+Jun 08 16:13:29 mayoub kernel: clocksource: Switched to clocksource kvm-clock
+Jun 08 16:13:29 mayoub kernel: VFS: Disk quotas dquot_6.6.0
+Jun 08 16:13:29 mayoub kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Jun 08 16:13:29 mayoub kernel: pnp: PnP ACPI init
+Jun 08 16:13:29 mayoub kernel: pnp 00:02: [dma 2]
+Jun 08 16:13:29 mayoub kernel: pnp: PnP ACPI: found 6 devices
+Jun 08 16:13:29 mayoub kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Jun 08 16:13:29 mayoub kernel: NET: Registered PF_INET protocol family
+Jun 08 16:13:29 mayoub kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: tcp_listen_portaddr_hash hash table entries: 16384 (order: 6, 262144 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: TCP established hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: TCP: Hash tables configured (established 262144 bind 65536)
+Jun 08 16:13:29 mayoub kernel: UDP hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: UDP-Lite hash table entries: 16384 (order: 8, 1048576 bytes, linear)
+Jun 08 16:13:29 mayoub kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Jun 08 16:13:29 mayoub kernel: RPC: Registered named UNIX socket transport module.
+Jun 08 16:13:29 mayoub kernel: RPC: Registered udp transport module.
+Jun 08 16:13:29 mayoub kernel: RPC: Registered tcp transport module.
+Jun 08 16:13:29 mayoub kernel: RPC: Registered tcp-with-tls transport module.
+Jun 08 16:13:29 mayoub kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: ROM [mem 0xfff80000-0xffffffff pref]: can't claim; no compatible bridge window
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:03.0: ROM [mem 0xc0800000-0xc087ffff pref]: assigned
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: resource 7 [mem 0xc0000000-0xfebfffff window]
+Jun 08 16:13:29 mayoub kernel: pci_bus 0000:00: resource 8 [mem 0x800000000-0x87fffffff window]
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+Jun 08 16:13:29 mayoub kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Jun 08 16:13:29 mayoub kernel: PCI: CLS 0 bytes, default 64
+Jun 08 16:13:29 mayoub kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Jun 08 16:13:29 mayoub kernel: software IO TLB: mapped [mem 0x00000000b7e3e000-0x00000000bbe3e000] (64MB)
+Jun 08 16:13:29 mayoub kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Jun 08 16:13:29 mayoub kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x1e71785e5dd, max_idle_ns: 440795244814 ns
+Jun 08 16:13:29 mayoub kernel: Initialise system trusted keyrings
+Jun 08 16:13:29 mayoub kernel: workingset: timestamp_bits=40 max_order=23 bucket_order=0
+Jun 08 16:13:29 mayoub kernel: NFS: Registering the id_resolver key type
+Jun 08 16:13:29 mayoub kernel: Key type id_resolver registered
+Jun 08 16:13:29 mayoub kernel: Key type id_legacy registered
+Jun 08 16:13:29 mayoub kernel: nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Jun 08 16:13:29 mayoub kernel: nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+Jun 08 16:13:29 mayoub kernel: 9p: Installing v9fs 9p2000 file system support
+Jun 08 16:13:29 mayoub kernel: Key type asymmetric registered
+Jun 08 16:13:29 mayoub kernel: Asymmetric key parser 'x509' registered
+Jun 08 16:13:29 mayoub kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Jun 08 16:13:29 mayoub kernel: io scheduler mq-deadline registered
+Jun 08 16:13:29 mayoub kernel: io scheduler kyber registered
+Jun 08 16:13:29 mayoub kernel: input: Power Button as /devices/platform/LNXPWRBN:00/input/input0
+Jun 08 16:13:29 mayoub kernel: ACPI: button: Power Button [PWRF]
+Jun 08 16:13:29 mayoub kernel: ACPI: \_SB_.LNKB: Enabled at IRQ 10
+Jun 08 16:13:29 mayoub kernel: ACPI: \_SB_.LNKC: Enabled at IRQ 11
+Jun 08 16:13:29 mayoub kernel: ACPI: \_SB_.LNKD: Enabled at IRQ 11
+Jun 08 16:13:29 mayoub kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Jun 08 16:13:29 mayoub kernel: 00:04: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Jun 08 16:13:29 mayoub kernel: Non-volatile memory driver v1.3
+Jun 08 16:13:29 mayoub kernel: Linux agpgart interface v0.103
+Jun 08 16:13:29 mayoub kernel: ACPI: bus type drm_connector registered
+Jun 08 16:13:29 mayoub kernel: [drm] pci: virtio-vga detected at 0000:00:02.0
+Jun 08 16:13:29 mayoub kernel: virtio-pci 0000:00:02.0: vgaarb: deactivate vga console
+Jun 08 16:13:29 mayoub kernel: [drm] features: -virgl +edid -resource_blob -host_visible
+Jun 08 16:13:29 mayoub kernel: [drm] features: -context_init
+Jun 08 16:13:29 mayoub kernel: [drm] number of scanouts: 1
+Jun 08 16:13:29 mayoub kernel: [drm] number of cap sets: 0
+Jun 08 16:13:29 mayoub kernel: virtio-pci 0000:00:02.0: [drm] Registered 1 planes with drm panic
+Jun 08 16:13:29 mayoub kernel: [drm] Initialized virtio_gpu 0.1.0 for 0000:00:02.0 on minor 0
+Jun 08 16:13:29 mayoub kernel: fbcon: virtio_gpudrmfb (fb0) is primary device
+Jun 08 16:13:29 mayoub kernel: Console: switching to colour frame buffer device 240x67
+Jun 08 16:13:29 mayoub kernel: virtio-pci 0000:00:02.0: [drm] fb0: virtio_gpudrmfb frame buffer device
+Jun 08 16:13:29 mayoub kernel: loop: module loaded
+Jun 08 16:13:29 mayoub kernel: scsi host0: ata_piix
+Jun 08 16:13:29 mayoub kernel: scsi host1: ata_piix
+Jun 08 16:13:29 mayoub kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc060 irq 14 lpm-pol 0
+Jun 08 16:13:29 mayoub kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc068 irq 15 lpm-pol 0
+Jun 08 16:13:29 mayoub kernel: e100: Intel(R) PRO/100 Network Driver
+Jun 08 16:13:29 mayoub kernel: e100: Copyright(c) 1999-2006 Intel Corporation
+Jun 08 16:13:29 mayoub kernel: e1000: Intel(R) PRO/1000 Network Driver
+Jun 08 16:13:29 mayoub kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+Jun 08 16:13:29 mayoub kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Jun 08 16:13:29 mayoub kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Jun 08 16:13:29 mayoub kernel: sky2: driver version 1.30
+Jun 08 16:13:29 mayoub kernel: usbcore: registered new interface driver usblp
+Jun 08 16:13:29 mayoub kernel: usbcore: registered new interface driver usb-storage
+Jun 08 16:13:29 mayoub kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+Jun 08 16:13:29 mayoub kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Jun 08 16:13:29 mayoub kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Jun 08 16:13:29 mayoub kernel: rtc_cmos 00:05: RTC can wake from S4
+Jun 08 16:13:29 mayoub kernel: rtc_cmos 00:05: registered as rtc0
+Jun 08 16:13:29 mayoub kernel: rtc_cmos 00:05: alarms up to one day, y3k, 242 bytes nvram
+Jun 08 16:13:29 mayoub kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Jun 08 16:13:29 mayoub kernel: intel_pstate: CPU model not supported
+Jun 08 16:13:29 mayoub kernel: hid: raw HID events driver (C) Jiri Kosina
+Jun 08 16:13:29 mayoub kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+Jun 08 16:13:29 mayoub kernel: usbcore: registered new interface driver usbhid
+Jun 08 16:13:29 mayoub kernel: usbhid: USB HID core driver
+Jun 08 16:13:29 mayoub kernel: Initializing XFRM netlink socket
+Jun 08 16:13:29 mayoub kernel: NET: Registered PF_INET6 protocol family
+Jun 08 16:13:29 mayoub kernel: Segment Routing with IPv6
+Jun 08 16:13:29 mayoub kernel: In-situ OAM (IOAM) with IPv6
+Jun 08 16:13:29 mayoub kernel: sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Jun 08 16:13:29 mayoub kernel: NET: Registered PF_PACKET protocol family
+Jun 08 16:13:29 mayoub kernel: 9pnet: Installing 9P2000 support
+Jun 08 16:13:29 mayoub kernel: Key type dns_resolver registered
+Jun 08 16:13:29 mayoub kernel: IPI shorthand broadcast: enabled
+Jun 08 16:13:29 mayoub kernel: sched_clock: Marking stable (274001144, 167552)->(276618651, -2449955)
+Jun 08 16:13:29 mayoub kernel: registered taskstats version 1
+Jun 08 16:13:29 mayoub kernel: Loading compiled-in X.509 certificates
+Jun 08 16:13:29 mayoub kernel: Demotion targets for Node 0: null
+Jun 08 16:13:29 mayoub kernel: PM:   Magic number: 14:465:236
+Jun 08 16:13:29 mayoub kernel: netconsole: network logging started
+Jun 08 16:13:29 mayoub kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Jun 08 16:13:29 mayoub kernel: kworker/u128:0 (211) used greatest stack depth: 14112 bytes left
+Jun 08 16:13:29 mayoub kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Jun 08 16:13:29 mayoub kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Jun 08 16:13:29 mayoub kernel: ALSA device list:
+Jun 08 16:13:29 mayoub kernel:   No soundcards found.
+Jun 08 16:13:29 mayoub kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jun 08 16:13:29 mayoub kernel: cfg80211: failed to load regulatory.db
+Jun 08 16:13:29 mayoub kernel: ata1: found unknown device (class 0)
+Jun 08 16:13:29 mayoub kernel: ata2: found unknown device (class 0)
+Jun 08 16:13:29 mayoub kernel: ata1.00: Model 'QEMU HARDDISK', rev '2.5+', applying quirks: bridgeok
+Jun 08 16:13:29 mayoub kernel: ata1.00: ATA-7: QEMU HARDDISK, 2.5+, max UDMA/100
+Jun 08 16:13:29 mayoub kernel: ata1.00: 79691776 sectors, multi 16: LBA48 
+Jun 08 16:13:29 mayoub kernel: ata2.00: ATAPI: QEMU DVD-ROM, 2.5+, max UDMA/100
+Jun 08 16:13:29 mayoub kernel: scsi 0:0:0:0: Direct-Access     ATA      QEMU HARDDISK    2.5+ PQ: 0 ANSI: 5
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: Attached scsi generic sg0 type 0
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: [sda] 79691776 512-byte logical blocks: (40.8 GB/38.0 GiB)
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: [sda] Write Protect is off
+Jun 08 16:13:29 mayoub kernel: scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.5+ PQ: 0 ANSI: 5
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+Jun 08 16:13:29 mayoub kernel:  sda: sda1 sda2 sda3 sda4
+Jun 08 16:13:29 mayoub kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Jun 08 16:13:29 mayoub kernel: sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+Jun 08 16:13:29 mayoub kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Jun 08 16:13:29 mayoub kernel: sr 1:0:0:0: Attached scsi CD-ROM sr0
+Jun 08 16:13:29 mayoub kernel: sr 1:0:0:0: Attached scsi generic sg1 type 5
+Jun 08 16:13:29 mayoub kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input3
+Jun 08 16:13:29 mayoub kernel: md: Waiting for all devices to be available before autodetect
+Jun 08 16:13:29 mayoub kernel: md: If you don't use raid, use raid=noautodetect
+Jun 08 16:13:29 mayoub kernel: md: Autodetecting RAID arrays.
+Jun 08 16:13:29 mayoub kernel: md: autorun ...
+Jun 08 16:13:29 mayoub kernel: md: ... autorun DONE.
+Jun 08 16:13:29 mayoub kernel: EXT4-fs (sda3): mounted filesystem 8edd9878-13ee-4697-8a55-92501def084f ro with ordered data mode. Quota mode: none.
+Jun 08 16:13:29 mayoub kernel: VFS: Mounted root (ext4 filesystem) readonly on device 8:3.
+Jun 08 16:13:29 mayoub kernel: devtmpfs: mounted
+Jun 08 16:13:29 mayoub kernel: VFS: Pivoted into new rootfs
+Jun 08 16:13:29 mayoub kernel: Freeing unused kernel image (initmem) memory: 2888K
+Jun 08 16:13:29 mayoub kernel: Write protecting the kernel read-only data: 28672k
+Jun 08 16:13:29 mayoub kernel: Freeing unused kernel image (text/rodata gap) memory: 872K
+Jun 08 16:13:29 mayoub kernel: Freeing unused kernel image (rodata/data gap) memory: 388K
+Jun 08 16:13:29 mayoub kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Jun 08 16:13:29 mayoub kernel: Run /sbin/init as init process
+Jun 08 16:13:29 mayoub kernel:   with arguments:
+Jun 08 16:13:29 mayoub kernel:     /sbin/init
+Jun 08 16:13:29 mayoub kernel:   with environment:
+Jun 08 16:13:29 mayoub kernel:     HOME=/
+Jun 08 16:13:29 mayoub kernel:     TERM=linux
+Jun 08 16:13:29 mayoub systemd[1]: RTC configured in localtime, applying delta of 0 minutes to system time.
+Jun 08 16:13:29 mayoub kernel: modprobe (227) used greatest stack depth: 12880 bytes left
+Jun 08 16:13:29 mayoub systemd[1]: systemd 257.6 running in system mode (-PAM -AUDIT -SELINUX -APPARMOR +IMA +IPE +SMACK -SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP -LIBCRYPTSETUP_PLUGINS +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -BTF -XKBCOMMON +UTMP +SYSVINIT -LIBARCHIVE)
+Jun 08 16:13:29 mayoub systemd[1]: Detected virtualization kvm.
+Jun 08 16:13:29 mayoub systemd[1]: Detected architecture x86-64.
+Jun 08 16:13:29 mayoub systemd[1]: Hostname set to <mayoub>.
+Jun 08 16:13:29 mayoub kernel: systemd-debug-g (231) used greatest stack depth: 12656 bytes left
+Jun 08 16:13:29 mayoub systemd-fstab-generator[232]: Failed to create unit file '/run/systemd/generator/boot-efi.mount', as it already exists. Duplicate entry in '/etc/fstab'?
+Jun 08 16:13:29 mayoub kernel: systemd-fstab-g (232) used greatest stack depth: 12560 bytes left
+Jun 08 16:13:29 mayoub (sd-exec-[230]: /usr/lib/systemd/system-generators/systemd-fstab-generator failed with exit status 1.
+Jun 08 16:13:29 mayoub kernel: systemd-gpt-aut (234) used greatest stack depth: 12120 bytes left
+Jun 08 16:13:29 mayoub systemd[1]: Queued start job for default target Graphical Interface.
+Jun 08 16:13:29 mayoub systemd[1]: Created slice Slice /system/getty.
+Jun 08 16:13:29 mayoub systemd[1]: Created slice Slice /system/modprobe.
+Jun 08 16:13:29 mayoub systemd[1]: Created slice Slice /system/systemd-fsck.
+Jun 08 16:13:29 mayoub systemd[1]: Created slice User and Session Slice.
+Jun 08 16:13:29 mayoub systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+Jun 08 16:13:29 mayoub systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+Jun 08 16:13:29 mayoub systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+Jun 08 16:13:29 mayoub systemd[1]: Expecting device /dev/sda1...
+Jun 08 16:13:29 mayoub systemd[1]: Expecting device /dev/sda2...
+Jun 08 16:13:29 mayoub systemd[1]: Expecting device /dev/sda4...
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Path Units.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Remote File Systems.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Slice Units.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Process Core Dump Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Credential Encryption/Decryption.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on initctl Compatibility Named Pipe.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Journal Audit Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Journal Socket (/dev/log).
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Journal Sockets.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on DDI File System Mounter Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Network Service Netlink Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Namespace Resource Manager Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Userspace Out-Of-Memory (OOM) Killer Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on udev Control Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on udev Kernel Socket.
+Jun 08 16:13:29 mayoub systemd[1]: Mounting Huge Pages File System...
+Jun 08 16:13:29 mayoub systemd[1]: Mounting POSIX Message Queue File System...
+Jun 08 16:13:29 mayoub systemd[1]: Mounting Kernel Debug File System...
+Jun 08 16:13:29 mayoub systemd[1]: Mounting Kernel Trace File System...
+Jun 08 16:13:29 mayoub systemd[1]: Create List of Static Device Nodes was skipped because of an unmet condition check (ConditionFileNotEmpty=/lib/modules/7.0.0/modules.devname).
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load Kernel Module configfs...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load Kernel Module dm_mod...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load Kernel Module drm...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load Kernel Module efi_pstore...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load Kernel Module fuse...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load Kernel Module loop...
+Jun 08 16:13:29 mayoub systemd[1]: Starting File System Check on Root Device...
+Jun 08 16:13:29 mayoub systemd[1]: Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+Jun 08 16:13:29 mayoub systemd[1]: systemd-journald.service: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.
+Jun 08 16:13:29 mayoub systemd[1]: systemd-journald.service: (This warning is only shown for the first unit using IP firewalling.)
+Jun 08 16:13:29 mayoub systemd[1]: Starting Journal Service...
+Jun 08 16:13:29 mayoub systemd[1]: Load Kernel Modules was skipped because no trigger condition checks were met.
+Jun 08 16:13:29 mayoub systemd[1]: Starting Generate network units from Kernel command line...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Userspace Out-Of-Memory (OOM) Killer...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Apply Kernel Variables...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Create Static Device Nodes in /dev gracefully...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load udev Rules from Credentials...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Coldplug All udev Devices...
+Jun 08 16:13:29 mayoub systemd[1]: Mounted Huge Pages File System.
+Jun 08 16:13:29 mayoub systemd[1]: Mounted POSIX Message Queue File System.
+Jun 08 16:13:29 mayoub systemd[1]: Mounted Kernel Debug File System.
+Jun 08 16:13:29 mayoub systemd[1]: Mounted Kernel Trace File System.
+Jun 08 16:13:29 mayoub systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load Kernel Module configfs.
+Jun 08 16:13:29 mayoub systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load Kernel Module dm_mod.
+Jun 08 16:13:29 mayoub systemd[1]: modprobe@drm.service: Deactivated successfully.
+Jun 08 16:13:29 mayoub systemd-journald[268]: Collecting audit messages is enabled.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load Kernel Module drm.
+Jun 08 16:13:29 mayoub systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load Kernel Module efi_pstore.
+Jun 08 16:13:29 mayoub systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load Kernel Module fuse.
+Jun 08 16:13:29 mayoub systemd[1]: modprobe@loop.service: Deactivated successfully.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load Kernel Module loop.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Generate network units from Kernel command line.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Preparation for Network.
+Jun 08 16:13:29 mayoub systemd[1]: FUSE Control File System was skipped because of an unmet condition check (ConditionPathExists=/sys/fs/fuse/connections).
+Jun 08 16:13:29 mayoub systemd[1]: Kernel Configuration File System was skipped because of an unmet condition check (ConditionPathExists=/sys/kernel/config).
+Jun 08 16:13:29 mayoub systemd[1]: Starting Namespace Resource Manager...
+Jun 08 16:13:29 mayoub systemd[1]: Repartition Root Disk was skipped because no trigger condition checks were met.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Apply Kernel Variables.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load udev Rules from Credentials.
+Jun 08 16:13:29 mayoub systemd[1]: Starting Network Name Resolution...
+Jun 08 16:13:29 mayoub systemd[1]: Finished File System Check on Root Device.
+Jun 08 16:13:29 mayoub systemd[1]: Starting Remount Root and Kernel File Systems...
+Jun 08 16:13:29 mayoub systemd[1]: Finished Create Static Device Nodes in /dev gracefully.
+Jun 08 16:13:29 mayoub systemd-journald[268]: Journal started
+Jun 08 16:13:29 mayoub systemd-journald[268]: Runtime Journal (/run/log/journal/1bc14124efd443d88f70a0c88761ca6d) is 8M, max 561.2M, 553.2M free.
+Jun 08 16:13:29 mayoub systemd-fsck[277]: /dev/sda3: clean, 470469/2260992 files, 4087556/9043968 blocks
+Jun 08 16:13:29 mayoub systemd[1]: Started Journal Service.
+Jun 08 16:13:29 mayoub systemd-nsresourced[286]: Not setting up BPF subsystem, as functionality has been disabled at compile time.
+Jun 08 16:13:29 mayoub systemd[1]: Started Namespace Resource Manager.
+Jun 08 16:13:29 mayoub systemd[1]: Starting Create Static Device Nodes in /dev...
+Jun 08 16:13:29 mayoub systemd[1]: Finished Create Static Device Nodes in /dev.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Coldplug All udev Devices.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Remount Root and Kernel File Systems.
+Jun 08 16:13:29 mayoub kernel: EXT4-fs (sda3): re-mounted 8edd9878-13ee-4697-8a55-92501def084f r/w.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Preparation for Local File Systems.
+Jun 08 16:13:29 mayoub systemd[1]: Rebuild Hardware Database was skipped because of an unmet condition check (ConditionNeedsUpdate=/etc).
+Jun 08 16:13:29 mayoub systemd[1]: Starting Flush Journal to Persistent Storage...
+Jun 08 16:13:29 mayoub systemd[1]: Platform Persistent Storage Archival was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+Jun 08 16:13:29 mayoub systemd[1]: Starting Load/Save OS Random Seed...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Network Time Synchronization...
+Jun 08 16:13:29 mayoub systemd[1]: Starting Rule-based Manager for Device Events and Files...
+Jun 08 16:13:29 mayoub systemd-oomd[270]: No swap; memory pressure usage will be degraded
+Jun 08 16:13:29 mayoub systemd[1]: Started Userspace Out-Of-Memory (OOM) Killer.
+Jun 08 16:13:29 mayoub systemd-resolved[287]: Positive Trust Anchors:
+Jun 08 16:13:29 mayoub systemd-resolved[287]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Jun 08 16:13:29 mayoub systemd-resolved[287]: . IN DS 38696 8 2 683d2d0acb8c9b712a1948b27f741219298d0a450d612c483af444a4c0fb2b16
+Jun 08 16:13:29 mayoub systemd-resolved[287]: Negative trust anchors: home.arpa 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addr.arpa 21.172.in-addr.arpa 22.172.in-addr.arpa 23.172.in-addr.arpa 24.172.in-addr.arpa 25.172.in-addr.arpa 26.172.in-addr.arpa 27.172.in-addr.arpa 28.172.in-addr.arpa 29.172.in-addr.arpa 30.172.in-addr.arpa 31.172.in-addr.arpa 170.0.0.192.in-addr.arpa 171.0.0.192.in-addr.arpa 168.192.in-addr.arpa d.f.ip6.arpa ipv4only.arpa resolver.arpa corp home internal intranet lan local private test
+Jun 08 16:13:29 mayoub systemd-resolved[287]: Using system hostname 'mayoub'.
+Jun 08 16:13:29 mayoub systemd[1]: Started Network Name Resolution.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Host and Network Name Lookups.
+Jun 08 16:13:29 mayoub systemd-journald[268]: Time spent on flushing to /var/log/journal/1bc14124efd443d88f70a0c88761ca6d is 20.006ms for 581 entries.
+Jun 08 16:13:29 mayoub systemd-journald[268]: System Journal (/var/log/journal/1bc14124efd443d88f70a0c88761ca6d) is 269.6M, max 3.3G, 3.1G free.
+Jun 08 16:13:29 mayoub systemd-journald[268]: Received client request to flush runtime journal.
+Jun 08 16:13:29 mayoub kernel: virtio_net virtio1 ens3: renamed from eth0
+Jun 08 16:13:29 mayoub systemd-udevd[324]: Using default interface naming scheme 'v257'.
+Jun 08 16:13:29 mayoub systemd-timesyncd[323]: The system is configured to read the RTC time in the local time zone. This mode cannot be fully supported. All system time to RTC updates are disabled.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Load/Save OS Random Seed.
+Jun 08 16:13:29 mayoub systemd[1]: Started Network Time Synchronization.
+Jun 08 16:13:29 mayoub systemd[1]: First Boot Complete was skipped because of an unmet condition check (ConditionFirstBoot=yes).
+Jun 08 16:13:29 mayoub systemd[1]: Reached target System Time Set.
+Jun 08 16:13:29 mayoub systemd[1]: Started Rule-based Manager for Device Events and Files.
+Jun 08 16:13:29 mayoub systemd[1]: Starting Network Configuration...
+Jun 08 16:13:29 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:13:29 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:13:29 mayoub systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Jun 08 16:13:29 mayoub systemd[1]: Starting Virtual Console Setup...
+Jun 08 16:13:29 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:13:29 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:13:29 mayoub systemd-networkd[338]: lo: Link UP
+Jun 08 16:13:29 mayoub systemd-networkd[338]: lo: Gained carrier
+Jun 08 16:13:29 mayoub systemd[1]: Started Network Configuration.
+Jun 08 16:13:29 mayoub systemd-networkd[338]: ens3: Configuring with /etc/systemd/network/10-eth-dhcp.network.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Network.
+Jun 08 16:13:29 mayoub systemd-networkd[338]: ens3: Link UP
+Jun 08 16:13:29 mayoub systemd-networkd[338]: ens3: Gained carrier
+Jun 08 16:13:29 mayoub systemd[1]: Starting Enable Persistent Storage in systemd-networkd...
+Jun 08 16:13:29 mayoub systemd[1]: Finished Enable Persistent Storage in systemd-networkd.
+Jun 08 16:13:29 mayoub systemd-networkd[338]: ens3: DHCPv4 address 10.0.2.15/24, gateway 10.0.2.2 acquired from 10.0.2.2
+Jun 08 16:13:29 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:13:29 mayoub systemd[1]: Found device QEMU_HARDDISK 2.
+Jun 08 16:13:29 mayoub systemd[1]: Found device QEMU_HARDDISK 4.
+Jun 08 16:13:29 mayoub systemd[1]: Found device QEMU_HARDDISK 1.
+Jun 08 16:13:29 mayoub systemd[1]: Activating swap /dev/sda4...
+Jun 08 16:13:29 mayoub systemd[1]: Starting File System Check on /dev/sda1...
+Jun 08 16:13:29 mayoub systemd[1]: Starting File System Check on /dev/sda2...
+Jun 08 16:13:29 mayoub systemd[1]: Finished Flush Journal to Persistent Storage.
+Jun 08 16:13:29 mayoub systemd-fsck[401]: /dev/sda2: clean, 889/65536 files, 37756/262144 blocks
+Jun 08 16:13:29 mayoub kernel: Adding 2095100k swap on /dev/sda4.  Priority:1 extents:1 across:2095100k 
+Jun 08 16:13:29 mayoub systemd[1]: Activated swap /dev/sda4.
+Jun 08 16:13:29 mayoub systemd[1]: Reached target Swaps.
+Jun 08 16:13:29 mayoub systemd[1]: Finished Virtual Console Setup.
+Jun 08 16:13:29 mayoub systemd[1]: Finished File System Check on /dev/sda2.
+Jun 08 16:13:29 mayoub systemd-fsck[405]: fsck.fat 4.2 (2021-01-31)
+Jun 08 16:13:29 mayoub systemd-fsck[405]: /dev/sda1: 5 files, 72/130811 clusters
+Jun 08 16:13:29 mayoub systemd[1]: Finished File System Check on /dev/sda1.
+Jun 08 16:13:30 mayoub systemd[1]: Mounting /boot...
+Jun 08 16:13:30 mayoub systemd[1]: tmp.mount: Directory /tmp to mount over is not empty, mounting anyway.
+Jun 08 16:13:30 mayoub systemd[1]: Mounting Temporary Directory /tmp...
+Jun 08 16:13:30 mayoub systemd[1]: Virtual Machine and Container Storage (Compatibility) was skipped because of an unmet condition check (ConditionPathExists=/var/lib/machines.raw).
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Containers.
+Jun 08 16:13:30 mayoub systemd[1]: Mounted Temporary Directory /tmp.
+Jun 08 16:13:30 mayoub systemd[1]: Mounted /boot.
+Jun 08 16:13:30 mayoub kernel: EXT4-fs (sda2): mounted filesystem aecde6f4-fd99-42bb-a920-444e9e98326d r/w with ordered data mode. Quota mode: none.
+Jun 08 16:13:30 mayoub systemd[1]: Mounting /boot/efi...
+Jun 08 16:13:30 mayoub systemd[1]: Mounted /boot/efi.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Local File Systems.
+Jun 08 16:13:30 mayoub systemd[1]: Listening on System Extension Image Management.
+Jun 08 16:13:30 mayoub systemd[1]: Set Up Additional Binary Formats was skipped because no trigger condition checks were met.
+Jun 08 16:13:30 mayoub systemd[1]: Merge System Configuration Images into /etc/ was skipped because no trigger condition checks were met.
+Jun 08 16:13:30 mayoub systemd[1]: Save Transient machine-id to Disk was skipped because of an unmet condition check (ConditionPathIsMountPoint=/etc/machine-id).
+Jun 08 16:13:30 mayoub systemd[1]: Merge System Extension Images into /usr/ and /opt/ was skipped because no trigger condition checks were met.
+Jun 08 16:13:30 mayoub systemd[1]: Starting Create System Files and Directories...
+Jun 08 16:13:30 mayoub systemd[1]: Finished Create System Files and Directories.
+Jun 08 16:13:30 mayoub systemd[1]: Rebuild Journal Catalog was skipped because of an unmet condition check (ConditionNeedsUpdate=/var).
+Jun 08 16:13:30 mayoub systemd[1]: Update is Completed was skipped because no trigger condition checks were met.
+Jun 08 16:13:30 mayoub systemd[1]: Starting Record System Boot/Shutdown in UTMP...
+Jun 08 16:13:30 mayoub systemd[1]: Finished Record System Boot/Shutdown in UTMP.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target System Initialization.
+Jun 08 16:13:30 mayoub systemd[1]: Started Daily Cleanup of Temporary Directories.
+Jun 08 16:13:30 mayoub systemd[1]: Started Update PKI/TLS certificate store weekly.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Timer Units.
+Jun 08 16:13:30 mayoub systemd[1]: Listening on D-Bus System Message Bus Socket.
+Jun 08 16:13:30 mayoub systemd[1]: Listening on OpenSSH Server Socket (systemd-ssh-generator, AF_UNIX Local).
+Jun 08 16:13:30 mayoub systemd[1]: Listening on Hostname Service Socket.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Socket Units.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Basic System.
+Jun 08 16:13:30 mayoub systemd[1]: System is tainted: unmerged-bin:local-hwclock
+Jun 08 16:13:30 mayoub systemd[1]: Starting D-Bus System Message Bus...
+Jun 08 16:13:30 mayoub systemd[1]: Started fcron periodical command scheduler.
+Jun 08 16:13:30 mayoub systemd[1]: Started Getty on tty1.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Login Prompts.
+Jun 08 16:13:30 mayoub systemd[1]: Starting Cyrus SASL authentication daemon...
+Jun 08 16:13:30 mayoub systemd[1]: Starting OpenLDAP server daemon...
+Jun 08 16:13:30 mayoub systemd[1]: Started OpenSSH Daemon.
+Jun 08 16:13:30 mayoub systemd[1]: Starting User Login Management...
+Jun 08 16:13:30 mayoub fcron[437]: fcron[437] 3.4.0 started
+Jun 08 16:13:30 mayoub fcron[437]: updating configuration from /var/spool/fcron
+Jun 08 16:13:30 mayoub fcron[437]: 2026-06-08 16:13:30  INFO fcron[437] 3.4.0 started
+Jun 08 16:13:30 mayoub fcron[437]: 2026-06-08 16:13:30  INFO updating configuration from /var/spool/fcron
+Jun 08 16:13:30 mayoub fcron[437]: adding file systab
+Jun 08 16:13:30 mayoub fcron[437]: 2026-06-08 16:13:30  INFO adding file systab
+Jun 08 16:13:30 mayoub saslauthd[445]:                 : master pid is: 445
+Jun 08 16:13:30 mayoub saslauthd[445]:                 : listening on socket: /run/saslauthd/mux
+Jun 08 16:13:30 mayoub systemd[1]: Started Cyrus SASL authentication daemon.
+Jun 08 16:13:30 mayoub sshd[441]: Server listening on 0.0.0.0 port 22.
+Jun 08 16:13:30 mayoub sshd[441]: Server listening on :: port 22.
+Jun 08 16:13:30 mayoub systemd-logind[444]: New seat seat0.
+Jun 08 16:13:30 mayoub systemd-logind[444]: Watching system buttons on /dev/input/event0 (Power Button)
+Jun 08 16:13:30 mayoub systemd-logind[444]: Watching system buttons on /dev/input/event1 (AT Translated Set 2 keyboard)
+Jun 08 16:13:30 mayoub systemd[1]: Started User Login Management.
+Jun 08 16:13:30 mayoub dbus-daemon[436]: Failed to drop supplementary groups: Operation not permitted
+Jun 08 16:13:30 mayoub systemd[1]: Started D-Bus System Message Bus.
+Jun 08 16:13:30 mayoub dbus-daemon[436]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Jun 08 16:13:30 mayoub systemd[1]: Started OpenLDAP server daemon.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Multi-User System.
+Jun 08 16:13:30 mayoub systemd[1]: Reached target Graphical Interface.
+Jun 08 16:13:30 mayoub systemd[1]: Starting Record Runlevel Change in UTMP...
+Jun 08 16:13:30 mayoub systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+Jun 08 16:13:30 mayoub systemd[1]: Finished Record Runlevel Change in UTMP.
+Jun 08 16:13:30 mayoub systemd[1]: Startup finished in 730ms (kernel) + 1.236s (userspace) = 1.967s.
+Jun 08 16:13:31 mayoub systemd-networkd[338]: ens3: Gained IPv6LL
+Jun 08 16:13:31 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:13:32 mayoub sshd-session[459]: Accepted password for mayoub from 10.0.2.2 port 59408 ssh2
+Jun 08 16:13:32 mayoub systemd-timesyncd[323]: Network configuration changed, trying to establish connection.
+Jun 08 16:14:02 mayoub systemd-timesyncd[323]: Contacted time server 216.239.35.8:123 (time3.google.com).
+Jun 08 16:14:02 mayoub systemd-timesyncd[323]: Initial clock synchronization to Mon 2026-06-08 16:14:02.662332 UTC.
+Jun 08 16:14:21 mayoub sudo[600]:   mayoub : TTY=pts/0 ; PWD=/home/mayoub ; USER=root ; COMMAND=/usr/bin/journalctl -b
+Jun 08 16:14:44 mayoub sudo[629]:   mayoub : TTY=pts/0 ; PWD=/home/mayoub ; USER=root ; COMMAND=/usr/bin/journalctl -b
