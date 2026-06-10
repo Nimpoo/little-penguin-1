@@ -4,7 +4,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Marwan AYOUB"); /* Who wrote this module? */
-MODULE_DESCRIPTION("A simple \"Hello, world!\" module"); /* What does this module do */
+MODULE_DESCRIPTION("A simple \"Hello, world!\" kernel module"); /* What does this module do */
 
 static int __init my_init(void) {
 	printk(KERN_INFO "Hello, world!\n");
