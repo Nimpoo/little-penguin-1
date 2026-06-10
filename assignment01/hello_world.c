@@ -4,7 +4,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Marwan AYOUB");
-MODULE_DESCRIPTION("A simple Hello World module");
+MODULE_DESCRIPTION("A simple \"Hello, world!\" module");
 
 static int __init my_init(void) {
 	printk(KERN_INFO "Hello, world!\n");
