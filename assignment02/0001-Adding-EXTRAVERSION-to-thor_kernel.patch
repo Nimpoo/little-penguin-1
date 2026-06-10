@@ -1,0 +1,25 @@
+From b10dc21f5e31a77c2047d1030905e8f6e00d195c Mon Sep 17 00:00:00 2001
+From: Nimpoo <marwan.ayoub.pro@gmail.com>
+Date: Wed, 10 Jun 2026 13:48:18 +0000
+Subject: [PATCH] Adding `EXTRAVERSION` to `-thor_kernel`
+
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index 36d0a32fb..49f728bbb 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 7
+ PATCHLEVEL = 0
+ SUBLEVEL = 0
+-EXTRAVERSION =
++EXTRAVERSION = -thor_kernel
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.50.1
+
