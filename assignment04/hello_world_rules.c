@@ -1,0 +1,19 @@
+#include <linux/init.h>
+#include <linux/module.h>
+#include <linux/kernel.h>
+
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Marwan AYOUB"); /* Who wrote this module? */
+MODULE_DESCRIPTION("A simple \"Hello, world!\" kernel module"); /* What does this module do */
+
+static int __init my_init(void) {
+	printk(KERN_INFO "Hello, USB Keyboard!\n");
+	return 0;
+}
+
+static void __exit my_exit(void) {
+	printk(KERN_INFO "Goodbye, USB Keyboard!\n");
+}
+
+module_init(my_init);
+module_exit(my_exit);

@@ -1,0 +1,5 @@
+SUBSYSTEM=="input", ACTION=="add", ENV{ID_BUS}=="usb", ENV{ID_INPUT_KEYBOARD}=="1", \
+RUN+="/usr/sbin/insmod /home/mayoub/assignment04/hello_world_rules.ko"
+
+SUBSYSTEM=="input", ACTION=="remove", ENV{ID_BUS}=="usb", ENV{ID_INPUT_KEYBOARD}=="1", \
+RUN+="/usr/sbin/rmmod hello_world_rules"
