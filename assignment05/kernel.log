@@ -1,0 +1,12 @@
+[ 2408.370624] fortytwo_misc_device - Hello, misc device!
+[ 2477.169297] fortytwo_misc_device [258, 10] - My open called.
+[ 2477.169468] fortytwo_misc_device - My write function called with incorrect login length.
+[ 2477.169668] fortytwo_misc_device [258, 10] - My close called.
+[ 2484.345400] fortytwo_misc_device [258, 10] - My open called.
+[ 2484.345582] fortytwo_misc_device - My write called.
+[ 2484.345680] fortytwo_misc_device [258, 10] - My close called.
+[ 2518.413952] fortytwo_misc_device [258, 10] - My open called.
+[ 2518.415274] fortytwo_misc_device - My read called.
+[ 2518.415570] fortytwo_misc_device - My read function called but all the data has been read.
+[ 2518.415827] fortytwo_misc_device [258, 10] - My close called.
+[ 2602.529095] fortytwo_misc_device - Goodbye, misc device!
