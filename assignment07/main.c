@@ -7,7 +7,7 @@
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Marwan AYOUB");
-MODULE_DESCRIPTION("Kernel module that create 3 virtual files for debug purposes.");
+MODULE_DESCRIPTION("Debugfs file for learning purposes: https://github.com/Nimpoo/little-penguin-1/wiki/Assignment-07");
 
 struct module_debugfs *debugfs_data;
 
@@ -22,7 +22,7 @@ static int __init debugfs_init(void)
 {
 	mutex_init(&foo_mutex);
 
-	debugfs_data = kmalloc(sizeof(struct module_debugfs), GFP_KERNEL);
+	debugfs_data = kmalloc_obj(*debugfs_data, GFP_KERNEL);
 	if (!debugfs_data)
 		return error("Failed to allocate memory for `debugfs_data`.");
 
@@ -38,13 +38,15 @@ static int __init debugfs_init(void)
 		return error("Failed to create debugfs id file.");
 	}
 
-	debugfs_data->jiffies_file = debugfs_create_file("jiffies", 0444, debugfs_data->dir, NULL, &jiffies_fops);
+	debugfs_data->jiffies_file = debugfs_create_file("jiffies", 0444, debugfs_data->dir,
+							 NULL, &jiffies_fops);
 	if (!debugfs_data->jiffies_file) {
 		kfree(debugfs_data);
 		return error("Failed to create debugfs jiffies file.");
 	}
 
-	debugfs_data->foo_file = debugfs_create_file("foo", 0644, debugfs_data->dir, NULL, &foo_fops);
+	debugfs_data->foo_file = debugfs_create_file("foo", 0644, debugfs_data->dir,
+						     NULL, &foo_fops);
 	if (!debugfs_data->foo_file) {
 		kfree(debugfs_data);
 		return error("Failed to create debugfs foo file.");

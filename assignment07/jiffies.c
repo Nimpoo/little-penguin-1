@@ -17,7 +17,7 @@ static int jiffies_close(struct inode *inode, struct file *file)
 static ssize_t jiffies_read(struct file *file, char __user *user_buf, size_t user_len, loff_t *ppos)
 {
 	if (!user_buf) {
-		pr_err("jiffies_read - `jiffies` read function called with a NULL user' buffer.\n");
+		pr_err("jiffies_file - `jiffies` read function called with a NULL user' buffer.\n");
 		return -EINVAL;
 	}
 
@@ -25,7 +25,7 @@ static ssize_t jiffies_read(struct file *file, char __user *user_buf, size_t use
 	u64 jiffies = get_jiffies_64();
 	int len = snprintf(buf, sizeof(buf), "%llu", jiffies);
 
-	pr_info("jiffies_file debugfs - `id` read called.\n");
+	pr_info("jiffies_file debugfs - `jiffies` read called.\n");
 	return simple_read_from_buffer(user_buf, user_len, ppos, buf, len);
 }
 
@@ -35,5 +35,4 @@ const struct file_operations jiffies_fops = {
 	.open = jiffies_open,
 	.release = jiffies_close,
 };
-
 EXPORT_SYMBOL(jiffies_fops);

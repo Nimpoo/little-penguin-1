@@ -5,7 +5,8 @@
 #define LOGIN_SIZE 6
 #define LOGIN "mayoub"
 
-static ssize_t id_write(struct file *file, const char __user *user_buf, size_t user_len, loff_t *ppos)
+static ssize_t id_write(struct file *file, const char __user *user_buf,
+			size_t user_len, loff_t *ppos)
 {
 	char buf[LOGIN_SIZE];
 
@@ -71,5 +72,4 @@ const struct file_operations id_fops = {
 	.open = id_open,
 	.release = id_close,
 };
-
 EXPORT_SYMBOL(id_fops);
