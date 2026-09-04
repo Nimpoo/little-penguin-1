@@ -1,0 +1,61 @@
+[  320.051757] assignment07: loading out-of-tree module taints kernel.
+[  341.362923] id_file debugfs [0, 0] - `id` open called.
+[  341.363168] id_file debugfs - `id` read called.
+[  341.363343] id_file debugfs - `id` read function called but all the data has been read.
+[  341.363526] id_file debugfs [0, 0] - `id` close called.
+[  350.322969] id_file debugfs [0, 0] - `id` open called.
+[  350.323137] id_file debugfs - `id` write function called with incorrect login length.
+[  350.323252] id_file debugfs [0, 0] - `id` close called.
+[  355.615573] id_file debugfs [0, 0] - `id` open called.
+[  355.615737] id_file debugfs - `id` write called.
+[  355.615835] id_file debugfs [0, 0] - `id` close called.
+[  374.000595] id_file debugfs [0, 0] - `id` open called.
+[  374.000746] id_file debugfs - `id` read called.
+[  374.000854] id_file debugfs - `id` read function called but all the data has been read.
+[  374.000958] id_file debugfs [0, 0] - `id` close called.
+[  378.587936] id_file debugfs [0, 0] - `id` open called.
+[  378.588210] id_file debugfs - `id` write function called with incorrect login length.
+[  378.588467] id_file debugfs [0, 0] - `id` close called.
+[  382.939642] id_file debugfs [0, 0] - `id` open called.
+[  382.939784] id_file debugfs - `id` write called.
+[  382.939881] id_file debugfs [0, 0] - `id` close called.
+[  389.020530] jiffies_file [0, 0] - `jiffies` open called.
+[  389.020671] jiffies_file debugfs - `jiffies` read called.
+[  389.020773] jiffies_file debugfs - `jiffies` read called.
+[  389.020877] jiffies_file [0, 0] - `jiffies` close called.
+[  406.776337] jiffies_file [0, 0] - `jiffies` open called.
+[  406.776779] jiffies_file [0, 0] - `jiffies` close called.
+[  413.000384] jiffies_file [0, 0] - `jiffies` open called.
+[  413.000560] jiffies_file debugfs - `jiffies` read called.
+[  413.000664] jiffies_file debugfs - `jiffies` read called.
+[  413.000754] jiffies_file [0, 0] - `jiffies` close called.
+[  429.703550] foo_file [0, 0] - `foo` open called.
+[  429.703774] foo_file [0, 0] - `foo` open function called with write permissions.
+[  429.703964] foo_file debugfs - `foo` write function called, 5 bytes written.
+[  429.704129] foo_file [0, 0] - `foo` close called.
+[  434.212575] foo_file [0, 0] - `foo` open called.
+[  434.212797] foo_file [0, 0] - `foo` open function called with read permissions.
+[  434.212964] foo_file debugfs - `foo` read function called, 5 bytes read.
+[  434.213126] foo_file debugfs - `foo` read function called but all the data has been read.
+[  434.213293] foo_file [0, 0] - `foo` close called.
+[  439.406538] foo_file [0, 0] - `foo` open called.
+[  439.406757] foo_file [0, 0] - `foo` open function called with write permissions.
+[  439.406938] foo_file debugfs - `foo` write function called, 4096 bytes written.
+[  439.407092] foo_file debugfs - `foo` write function called with a size greater than `PAGE_SIZE' (4096 bytes).
+[  439.407320] foo_file [0, 0] - `foo` close called.
+[  444.743651] foo_file [0, 0] - `foo` open called.
+[  444.743782] foo_file [0, 0] - `foo` open function called with write permissions.
+[  444.743884] foo_file debugfs - `foo` write function called, 4096 bytes written.
+[  444.743975] foo_file [0, 0] - `foo` close called.
+[  450.276147] foo_file [0, 0] - `foo` open called.
+[  450.276300] foo_file [0, 0] - `foo` open function called with read permissions.
+[  450.276412] foo_file debugfs - `foo` read function called, 4096 bytes read.
+[  450.276536] foo_file debugfs - `foo` read function called but all the data has been read.
+[  450.276635] foo_file [0, 0] - `foo` close called.
+[  460.598915] foo_file [0, 0] - `foo` open called.
+[  460.599045] foo_file [0, 0] - `foo` open function called with read permissions.
+[  460.599146] foo_file debugfs - `foo` read function called, 4096 bytes read.
+[  460.599252] foo_file debugfs - `foo` read function called but all the data has been read.
+[  460.599354] foo_file [0, 0] - `foo` close called.
+[  473.552546] DebugFS module - removing directory and files.
+[  473.552686] DebugFS module exited.
