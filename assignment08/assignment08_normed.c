@@ -24,14 +24,14 @@ static ssize_t myfd_read(struct file *fp, char __user *user, size_t size, loff_t
 		return -ENOMEM;
 
 	while (rev_index > 0) {
-		tmp[i] = str[rev_index];
 		rev_index--;
+		tmp[i] = str[rev_index];
 		i++;
 	}
 
 	pr_info("reverse read function called, reversed string.\n");
 
-	res = simple_read_from_buffer(user, PAGE_SIZE, offs, tmp, i);
+	res = simple_read_from_buffer(user, size, offs, tmp, i);
 	if (res < 0)
 		pr_err("reverse read function failed.\n");
 	kfree(tmp);
@@ -41,7 +41,17 @@ static ssize_t myfd_read(struct file *fp, char __user *user, size_t size, loff_t
 
 static ssize_t myfd_write(struct file *fp, const char __user *user, size_t size, loff_t *offs)
 {
-	ssize_t res = simple_write_to_buffer(str, size, offs, user, size);
+	if (*offs < 0 || *offs > PAGE_SIZE - 1 || size > PAGE_SIZE - 1 - *offs) {
+		pr_err("reverse write function failed: string content must fit in PAGE_SIZE - 1 bytes.\n");
+		return -EINVAL;
+	}
+
+	memset(str, 0, PAGE_SIZE);
+
+	ssize_t res = simple_write_to_buffer(str, PAGE_SIZE - 1, offs, user, size);
+
+	if (res >= 0)
+		str[*offs] = '\0';
 
 	if (res < 0)
 		pr_err("reverse write function failed.\n");
